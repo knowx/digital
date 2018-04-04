@@ -5,7 +5,7 @@ api_group = cfg.OptGroup(name='api',
 
 api_service_opts = [
     cfg.PortOpt('port',
-                default=8080,
+                default=8168,
                 help='The port for the Digital API server.'),
     cfg.IPOpt('host',
               default='127.0.0.1',

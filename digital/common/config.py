@@ -11,7 +11,7 @@ def parse_args(argv, default_config_files=None):
     rpc.set_defaults(control_exchange='digital')
     CONF(argv[1:],
          project='digital',
-         version=version.current_version,
+         version=version.version_info.release_string(),
          default_config_files=default_config_files)
     rpc.init(CONF)
 
