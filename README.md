@@ -1,10 +1,5 @@
-### Digital Twin
-*Digital twin refers to a digital replica of physical assets, processes and systems that can be used for various purposes.* 
-*The digital representation provides both the elements and the dynamics of how an Internet of Things device operates and lives throughout its life cycle.*
-
-*Digital twins integrate artificial intelligence, machine learning and software analytics with data to create living digital simulation models that update and change as their physical counterparts change. A digital twin continuously learns and updates itself from multiple sources to represent its near real-time status, working condition or position. This learning system, learns from itself, using sensor data that conveys various aspects of its operating condition; from human experts, such as engineers with deep and relevant industry domain knowledge; from other similar machines; from other similar fleets of machines; and from the larger systems and environment in which it may be a part of. A digital twin also integrates historical data from past machine usage to factor into its digital model.*
-
-*In various industrial sectors, twins are being used to optimize the operation and maintenance of physical assets, systems and manufacturing processes.They are a formative technology for the Industrial Internet of Things, where physical objects can live and interact with other machines and people virtually.*
-                                                                                      
+### Industry 4.0
+*Industry 4.0 is a name for the current trend of automation and data exchange in manufacturing technologies. It includes cyber-physical systems, the Internet of things, cloud computing and cognitive computing. Industry 4.0 is commonly referred to as the fourth industrial revolution.*
+*Industry 4.0 creates what has been called a "smart factory". Within the modular structured smart factories, cyber-physical systems monitor physical processes, create a virtual copy of the physical world and make decentralized decisions. Over the Internet of Things, cyber-physical systems communicate and cooperate with each other and with humans in real time, and via cloud computing, both internal and cross-organizational services are offered and used by participants of the value chain.*
                                                                  <From Wikipedia, the free encyclopedia>
                                                                                    
