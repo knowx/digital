@@ -19,7 +19,7 @@ import abc
 
 import six
 
-from magnum.common.x509 import operations
+from digital.common.x509 import operations
 
 
 @six.add_metaclass(abc.ABCMeta)
@@ -62,7 +62,7 @@ class CertManager(object):
     @abc.abstractmethod
     def store_cert(self, certificate, private_key, intermediates=None,
                    private_key_passphrase=None, expiration=None,
-                   name='Magnum TLS Cert', **kwargs):
+                   name='Digital TLS Cert', **kwargs):
         """Stores (i.e., registers) a cert with the cert manager.
 
         This method stores the specified cert and returns its UUID that

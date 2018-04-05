@@ -18,15 +18,24 @@ depends_on = None
 
 def upgrade():
     op.create_table(
-        'thing',
+        'digital_service',
         sa.Column('created_at', sa.DateTime(), nullable=True),
         sa.Column('updated_at', sa.DateTime(), nullable=True),
         sa.Column('id', sa.Integer(), nullable=False),
-        sa.Column('uuid', sa.String(length=36), nullable=True),
-        sa.Column('name', sa.String(length=255), nullable=True),
+        sa.Column('report_count', sa.Integer(), nullable=False),
+        sa.Column('host', sa.String(length=255), nullable=True),
+        sa.Column('binary', sa.String(length=255), nullable=True),
+        sa.Column('disabled', sa.Boolean(), nullable=True),
+        sa.Column('disabled_reason', sa.String(length=255), nullable=True),
+        # 'last_seen_up' has different purpose than 'updated_at'.
+        # 'updated_at' refers to any modification of the entry, which can
+        # be administrative too, whereas 'last_seen_up' is more related to
+        # digital_service. Modeled after nova/servicegroup
+        sa.Column('last_seen_up', sa.DateTime(), nullable=True),
+        sa.Column('forced_down', sa.Boolean(), nullable=True),
         sa.PrimaryKeyConstraint('id'),
-        mysql_ENGINE='InnoDB',
-        mysql_DEFAULT_CHARSET='UTF8'
+        sa.UniqueConstraint('host', 'binary',
+                            name='uniq_digital_service0host0binary')
     )
 
 
