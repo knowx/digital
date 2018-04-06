@@ -6,5 +6,5 @@
 
 *In various industrial sectors, twins are being used to optimize the operation and maintenance of physical assets, systems and manufacturing processes.They are a formative technology for the Industrial Internet of Things, where physical objects can live and interact with other machines and people virtually.*
                                                                                       
-                                                                                  <From Wikipedia, the free encyclopedia>
+                                                                 <From Wikipedia, the free encyclopedia>
                                                                                    
